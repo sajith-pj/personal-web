@@ -3,6 +3,8 @@
         margin: 0%;
         padding: 0;
         font-family: 'Amaranth', sans-serif;
+        
+        
     }
     .custom-nav
     {
@@ -19,16 +21,16 @@
         margin-right: 17rem;
         margin-top: 10rem;
       }
-    html,
-    body,
-    header
+    header,
+    body
+  
     {
-       
-        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('mine.jpg');
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-      height: 105%;
+      background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('mine.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+   height: 100vw;
+   width: 100%;
     }
     
     .intro-des
@@ -76,9 +78,9 @@
   .goodies
       {
         display: inline;
-        margin-left: 5px;
+        margin-left: 0px;
         margin-top: 10px;
-        font-size: 15vh;
+        font-size: 10vw;
       }
     .list-group-item
               {
@@ -188,8 +190,28 @@
         width: 80%;
         border-radius: 20px;
         padding: 20px;
-          margin-left: 100px;
+          margin-left: 50px;
           box-shadow: 0 5px 10px rgba(255, 255, 255, 0.76);
       }
      
-      
+      //* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 320px) {  
+  header,body
+  
+    {
+      background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))100%,url('mine.jpg');
+     
+
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {  }
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {  }
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {  }
+
+/*Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width*/
